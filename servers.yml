@@ -1,0 +1,42 @@
+langservers:
+  go:
+    - /usr/bin/gopls
+  java:
+    - /usr/bin/jdtls
+  python:
+    - /usr/local/bin/pylsp
+  csharp:
+    - /usr/bin/omnisharp
+    - -lsp
+  php:
+    - /usr/local/bin/intelephense
+    - --stdio
+  cpp:
+    - /usr/bin/clangd
+  c:
+    - /usr/bin/clangd
+  ruby:
+    - /usr/bin/solargraph
+    - stdio
+  r:
+    - R
+    - --slave
+    - --no-save
+    - -e
+    - "languageserver::run()"
+  swift:
+    - /usr/bin/sourcekit-lsp
+  shell:
+    - /usr/local/bin/bash-language-server
+    - start
+  kotlin:
+    - /usr/bin/kotlin-language-server
+  perl:
+    - node
+    - /workspace/jsonrpc-ws-proxy/servers/perl-language-server/server/out/server.js
+    - --stdio
+  scala:
+    - /workspace/jsonrpc-ws-proxy/servers/scala_language_server/metals
+  javascript:
+    - /usr/local/bin/typescript-language-server
+    - --stdio

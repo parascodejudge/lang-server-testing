@@ -14,6 +14,7 @@
   "bin": "dist/server.js",
   "main": "dist/server.js",
   "scripts": {
+    "start": "tsc & node dist/server.js --languageServers servers.yml",
     "prepare": "npm run clean && npm run build",
     "watch": "tsc -w",
     "clean": "rimraf dist",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "@sourcegraph/vscode-ws-jsonrpc": "0.0.3-fork",
+    "axios": "^0.27.2",
     "js-yaml": "^3.13.1",
     "minimist": "^1.2.0",
     "ws": "^6.2.1"
